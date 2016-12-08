@@ -10,6 +10,15 @@ Enabeling I2C on the Raspberry Pi. You should be fine by following the instructi
 In the last step ('Testing I2C') you should see at least one connected device, your TSL2591 (most likely at 0x29 ).
 
 
+## Installing dependencies ##
+
+This is how you install all the depenencies for the (Raspberry Pi):
+
+```
+sudo apt-get install python-dev python-smbus libffi5 libffi5-dbg libffi5-dev 
+```
+
+Also make sure you have enabled I2C. Execute `sudo raspi-config`, then select `Advanced Options`, and then select `Enable I2C`. Then `sudo reboot`.
 
 
 ## Installing ##
